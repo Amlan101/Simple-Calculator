@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23sp"
+        android:gravity="center"
+        android:text="CALCULATOR"
+        android:textAlignment="center"
+        android:textColor="#DA8E1E"
+        android:textColorHighlight="#D61010"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/userNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter 1st Number"
+        android:inputType="numberDecimal"
+        android:textColor="#1C0202" />
+
+    <EditText
+        android:id="@+id/userNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter 2nd Number"
+        android:inputType="numberDecimal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonSum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDiff"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="-"
+            android:textSize="24sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonProduct"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="*"
+            android:textSize="24sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDivide"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:text="/"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="120dp"
+        android:gravity="center"
+        android:hint="RESULT"
+        android:textColorHint="@color/teal_700"
+        android:textColor="#3A1515"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
+
+
+
